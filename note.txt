@@ -1,0 +1,38 @@
+📄 F1 Takım Puan Tahmin Projesi – Proje Açıklaması (TR)
+Bu projede, 1950–2020 yılları arasında gerçekleşen Formula 1 yarışlarından elde edilen Kaggle veri seti kullanılarak bir takımın bir yarışta alacağı puanı tahmin etmeye yönelik bir makine öğrenimi modeli geliştirilmiştir. Proje kapsamında:
+
+Tüm yarış, sürücü, takım, puan ve pist verileri analiz edilmiştir.
+
+constructor_results.csv, races.csv ve constructors.csv dosyaları birleştirilerek veri seti oluşturulmuştur.
+
+Her yarış için takım, yıl ve pist ID bilgileri girdi (feature) olarak seçilmiş; takımın o yarışta aldığı puan hedef (target) olarak belirlenmiştir.
+
+Kategorik veriler LabelEncoder kullanılarak sayısal hale getirilmiştir.
+
+Random Forest Regressor modeli eğitilmiş, RMSE ≈ 4.42 ve R² ≈ 0.65 başarı skoru elde edilmiştir.
+
+Eğitim sonrası model .pkl formatında kaydedilmiş, etiketleyiciler de dosyalanmıştır.
+
+Son olarak kullanıcıların takım, yıl ve pist bilgisi girerek puan tahmini alabileceği etkileşimli bir arayüz Streamlit ile geliştirilmiştir.
+
+Bu proje, spor analitiği ve makine öğrenimini bir araya getirerek geçmiş verilerden takım başarısını tahmin etmenin mümkün olduğunu göstermektedir.
+
+---
+📄 F1 Team Points Prediction Project – Project Description (EN)
+In this project, a machine learning model was built to predict the number of points a Formula 1 team would earn in a race using historical race data from 1950 to 2020, sourced from a Kaggle dataset.
+
+Key project steps include:
+
+Comprehensive exploratory data analysis (EDA) was performed using multiple CSV files such as constructor_results.csv, races.csv, and constructors.csv.
+
+Data was merged to create a final modeling dataset containing team name, circuit ID, and year as input features, and the actual points earned as the target.
+
+Categorical variables were encoded using LabelEncoder.
+
+A Random Forest Regressor model was trained, achieving RMSE ≈ 4.42 and R² ≈ 0.65.
+
+The trained model and encoders were saved as .pkl files for deployment.
+
+An interactive prediction interface was built using Streamlit, allowing users to input a year, team, and circuit to estimate race points.
+
+This project demonstrates the application of machine learning in sports analytics and how historical performance data can be used to forecast outcomes.
